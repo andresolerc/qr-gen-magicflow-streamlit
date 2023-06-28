@@ -31,7 +31,7 @@ def get_output_url(country, qr_url_content):
     output_url = None
 
     # Poll the server for up to 200 seconds
-    for _ in range(20):
+    for _ in range(100):
 
         # Second API call
         url2 = f"https://api.magicflow.ai/workflow/a9551b0f-b36f-4ce6-a699-3821dfe6c2e6/jobs/{job_id}/results"
